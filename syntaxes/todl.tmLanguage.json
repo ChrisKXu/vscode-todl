@@ -1,0 +1,20 @@
+{
+  "name": "todl",
+  "scopeName": "source.todl",
+  "fileTypes": ["tdl"],
+  "patterns": [
+    {
+      "name": "keywords.control.todl",
+      "match": "\b(if|unless|else|while|until|return|break|continue)\b"
+    },
+    {
+      "name": "keywords.types.todl",
+      "match": "\b(int)\b"
+    },
+    {
+      "name": "strings.todl",
+      "begin": "\"",
+      "end": "\""
+    }
+  ]
+}
