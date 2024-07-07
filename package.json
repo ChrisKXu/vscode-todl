@@ -1,6 +1,6 @@
 {
-  "name": "todl-vscode",
-  "displayName": "todl-vscode",
+  "name": "vscode-todl",
+  "displayName": "vscode-todl",
   "description": "VSCode Extension for Todl",
   "version": "0.0.1",
   "engines": {
