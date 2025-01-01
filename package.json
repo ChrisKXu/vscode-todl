@@ -10,12 +10,15 @@
     "Other"
   ],
   "main": "./out/extension.js",
+  "activationEvents": [
+    "onLanguage:todl"
+  ],
   "contributes": {
     "languages": [
       {
         "id": "todl",
         "aliases": [
-          "tdl"
+          "todl"
         ],
         "extensions": [
           ".tdl"

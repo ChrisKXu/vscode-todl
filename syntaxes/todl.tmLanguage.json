@@ -1,20 +1,55 @@
 {
   "name": "todl",
   "scopeName": "source.todl",
-  "fileTypes": ["tdl"],
+  "fileTypes": [
+    "tdl"
+  ],
   "patterns": [
     {
-      "name": "keywords.control.todl",
-      "match": "\b(if|unless|else|while|until|return|break|continue)\b"
+      "include": "#keywords"
     },
     {
-      "name": "keywords.types.todl",
-      "match": "\b(int)\b"
+      "include": "#strings"
     },
     {
-      "name": "strings.todl",
-      "begin": "\"",
-      "end": "\""
+      "include": "#numbers"
     }
-  ]
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.n",
+          "match": "\\b(if|unless|while|until|break|continue|return)\\b"
+        },
+        {
+          "name": "keyword.declaration.n",
+          "match": "\\b(const|let)\\b"
+        },
+        {
+          "name": "keyword.import.n",
+          "match": "\\b(import|from)\\b"
+        },
+        {
+          "name": "keyword.type.n",
+          "match": "\\b(bool|byte|char|int|long|string|void)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.n",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.n",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "numbers": {
+      "name": "constant.numeric.n",
+      "match": "\\b\\d+\\b"
+    }
+  }
 }

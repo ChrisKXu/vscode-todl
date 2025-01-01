@@ -2491,22 +2491,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"todl-vscode@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "todl-vscode@workspace:."
-  dependencies:
-    "@types/mocha": "npm:^10.0.6"
-    "@types/node": "npm:18.x"
-    "@types/vscode": "npm:^1.87.0"
-    "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
-    "@typescript-eslint/parser": "npm:^7.0.2"
-    "@vscode/test-cli": "npm:^0.0.6"
-    "@vscode/test-electron": "npm:^2.3.9"
-    eslint: "npm:^8.56.0"
-    typescript: "npm:^5.3.3"
-  languageName: unknown
-  linkType: soft
-
 "ts-api-utils@npm:^1.0.1":
   version: 1.2.1
   resolution: "ts-api-utils@npm:1.2.1"
@@ -2603,6 +2587,22 @@ __metadata:
   checksum: 10c0/e691ba4dd0dea4a884e52c37dbda30cce6f9eeafe9b26721e449429c6bb0f4b6d1e33fabe7711d0f67f7a34c3bfd56c873f7375bba0b1534e6a2843ce99550e5
   languageName: node
   linkType: hard
+
+"vscode-todl@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "vscode-todl@workspace:."
+  dependencies:
+    "@types/mocha": "npm:^10.0.6"
+    "@types/node": "npm:18.x"
+    "@types/vscode": "npm:^1.87.0"
+    "@typescript-eslint/eslint-plugin": "npm:^7.0.2"
+    "@typescript-eslint/parser": "npm:^7.0.2"
+    "@vscode/test-cli": "npm:^0.0.6"
+    "@vscode/test-electron": "npm:^2.3.9"
+    eslint: "npm:^8.56.0"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
 
 "which@npm:^2.0.1":
   version: 2.0.2
