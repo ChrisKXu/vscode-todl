@@ -11,9 +11,7 @@
   ],
   "main": "./dist/extension.js",
   "browser": "./dist/web/extension.js",
-  "activationEvents": [
-    "onLanguage:todl"
-  ],
+  "activationEvents": [],
   "contributes": {
     "languages": [
       {
