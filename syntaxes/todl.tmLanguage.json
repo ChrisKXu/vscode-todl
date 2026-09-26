@@ -6,49 +6,80 @@
   ],
   "patterns": [
     {
-      "include": "#keywords"
+      "include": "#comments"
     },
     {
       "include": "#strings"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#constants"
     },
     {
       "include": "#numbers"
     }
   ],
   "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.todl",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.todl",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
     "keywords": {
       "patterns": [
         {
-          "name": "keyword.control.n",
-          "match": "\\b(if|unless|while|until|break|continue|return)\\b"
+          "name": "keyword.control.todl",
+          "match": "\\b(if|unless|else|while|until|break|continue|return)\\b"
         },
         {
-          "name": "keyword.declaration.n",
+          "name": "keyword.declaration.todl",
           "match": "\\b(const|let)\\b"
         },
         {
-          "name": "keyword.import.n",
+          "name": "keyword.import.todl",
           "match": "\\b(import|from)\\b"
         },
         {
-          "name": "keyword.type.n",
+          "name": "keyword.operator.new.todl",
+          "match": "\\bnew\\b"
+        },
+        {
+          "name": "keyword.type.todl",
           "match": "\\b(bool|byte|char|int|long|string|void)\\b"
         }
       ]
     },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.language.boolean.todl",
+          "match": "\\b(true|false)\\b"
+        }
+      ]
+    },
     "strings": {
-      "name": "string.quoted.double.n",
+      "name": "string.quoted.double.todl",
       "begin": "\"",
       "end": "\"",
       "patterns": [
         {
-          "name": "constant.character.escape.n",
+          "name": "constant.character.escape.todl",
           "match": "\\\\."
         }
       ]
     },
     "numbers": {
-      "name": "constant.numeric.n",
+      "name": "constant.numeric.todl",
       "match": "\\b\\d+\\b"
     }
   }
