@@ -42,6 +42,10 @@
           "match": "\\b(if|unless|else|while|until|break|continue|return)\\b"
         },
         {
+          "name": "keyword.control.trycatch.todl",
+          "match": "\\b(try|except|finally|throw)\\b"
+        },
+        {
           "name": "keyword.declaration.todl",
           "match": "\\b(const|let)\\b"
         },
